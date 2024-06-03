@@ -4,9 +4,9 @@ module "secret-manager" {
   project_id = "shivanvitha"
   secrets = [
     {
-      name                     = "secret-3"
+      name                     = "secret-4"
       automatic_replication    = true
       secret_data              = "secret information"
-    },
+    }
   ]
 }
