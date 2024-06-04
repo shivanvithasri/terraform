@@ -27,8 +27,8 @@ jobs:
         uses: 'google-github-actions/auth@v2'
         with:
        #   token_format: 'access_token'
-          workload_identity_provider:  ${{ secrets.WORKLOAD_IDENTITY_PROVIDER_ID1 }}
-          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT1 }}
+          workload_identity_provider:  ${{ secrets.WORKLOAD_IDENTITY_PROVIDER_PARIS }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT_PARIS }}
       - name: Setup Terraform with specified version on the runner
         uses: hashicorp/setup-terraform@v2
       - name: Terraform init
